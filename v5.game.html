@@ -2,9 +2,10 @@
 
 <html>
 <head>
-    <title>Javascript Racer - v5 (game)</title>
+    <title>Javascript Racer Redux 2021</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="common.css" rel="stylesheet" type="text/css" />
+    <link href="GameOver.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -16,7 +17,7 @@
                 <a href='v2.curves.html'>curves</a>     |
                 <a href='v3.hills.html'>hills</a>       |
                 <a href='v4.final.html'>fastest lap</a>       |
-                <a href='v5.game.html'>out of time</a>
+                <a href='v5.game.html'>New Game Mode</a>
             </td>
         </tr>
         <tr><td id="fps" colspan="2" align="right"></td></tr>
@@ -71,8 +72,8 @@
     </div>
 
     <audio id='music'>
-        <source src="music/jsracer_soundtrack.ogg">
-        <source src="music/lsracer_soundtrack.mp3">
+        <source src="music/racer.ogg">
+        <source src="music/racer.mp3">
     </audio>
     <span id="mute"></span>
 
@@ -81,7 +82,6 @@
             <span id="speed" class="hud"><span id="speed_value" class="value">0</span> mph</span>
             <span id="current_lap_time" class="hud">Time: <span id="current_lap_time_value" class="value">0.0</span></span>
             <span id="current_level" class="hud">Level: <span id="current_level_value" class="value">0</span></span>
-            <span id="turbo_left" class="hud">Turbo: <span id="turbo_left_value" class="value">0</span></span>
             <span id="remaining_time" class="hud">Time: <span id="remaining_time_value" class="value">0.0</span></span>
             <span id="last_lap_time" class="hud">Last Lap: <span id="last_lap_time_value" class="value">0.0</span></span>
             <span id="fast_lap_time" class="hud">Fastest Lap: <span id="fast_lap_time_value" class="value">0.0</span></span>
@@ -94,7 +94,7 @@
 
     <script src="stats.js"></script>
     <script src="common.js"></script>
-    <script src="racer.js"></script>
+    <script src="GameOver.js"></script>
     <script>racer(1); // initiate the game</script>
 
 </body>
