@@ -26,3 +26,24 @@ body          { font-family: Arial, Helvetica, sans-serif; }
 #hud .value            { color: black; font-weight: bold; }
 #hud .fastest          { background-color: rgba(255,215,0,0.5); }
 
+/* Fullscreen mode (on double click, managed in JS */
+#canvas:fullscreen {
+    width: auto;
+    height: 100%; /* height is smaller than width, so resize by height and adapt width automatically */
+}
+
+#canvas:-webkit-full-screen {
+    width: auto;
+    height: 100%;
+}
+
+#canvas:-moz-full-screen {
+    width: auto;
+    height: 100%;
+}
+
+#canvas:-ms-fullscreen {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
